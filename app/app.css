@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro");
+* {
+  padding: 0;
+  margin: 0; }
+
+.main-nav {
+  height: 60px;
+  border: 2px solid #b61f22; }
+  .main-nav li {
+    margin-left: 60px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    float: left;
+    margin-right: 15px;
+    list-style: none; }
+    .main-nav li a {
+      text-decoration: none;
+      color: #db2d30; }
+      .main-nav li a:hover {
+        color: #ffffff; }
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif; }
+
+.content {
+  display: block;
+  width: 960px;
+  height: 960px;
+  background-color: #393836;
+  margin: 0  auto;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  border-radius: 60px; }
+
+.bloc-text {
+  width: 400px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif; }
+
+p {
+  font-size: 16px; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  p {
+    font-size: 18px; } }
+@media (min-width: 1024px) {
+  p {
+    font-size: 20px; } }
+article[role="main"] {
+  float: left;
+  width: 62.5%; }
+
+/*# sourceMappingURL=app.css.map */

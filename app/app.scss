@@ -1,0 +1,105 @@
+
+
+
+//-------------Variables-----------------//
+$red:#b61f22;
+$box: 960px;
+$grey:#393836;
+$white: #ffffff;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro');
+
+$roboto: 'Roboto', sans-serif;
+$source: 'Source Sans Pro', sans-serif;
+
+//-------------Main--------------------//
+
+*{
+
+padding: 0;
+margin: 0;
+
+}
+//-----------Styles-imbriqué----------//
+.main-nav{
+  height: 60px;
+  border: 2px solid $red;
+
+  li{
+      margin-left: 60px;
+      font-family:$source;
+      font-size:24px;
+      font-weight:400;
+
+
+    float: left;
+    margin-right: 15px;
+    list-style: none;
+
+
+    a{
+      text-decoration: none;
+      color:lighten( $red, 10% );
+      &:hover{
+        color: $white;
+      }
+    }
+
+  }
+
+}
+h1{
+  text-align: center;
+  color: $white;
+  font-family: $roboto;
+}
+//---------------mixins------------//
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+.content{
+  display: block;
+  width: $box;
+  height: $box;
+  background-color:$grey;
+  margin: 0  auto;
+  @include border-radius(60px);
+}
+
+.bloc-text{
+  width: 400px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  color: $white;
+  font-family: $roboto;
+}
+//---------------mixins-media-queries------------//
+p {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
